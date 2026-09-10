@@ -1,0 +1,785 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>About us: SiMBa</title>
+<meta name="description" content="SiMBa is an innovative IT company dedicated to delivering digital solutions that simplify business operations.">
+<link rel="canonical" href="about.html">
+<link href="css/bootstrap.minf649.css?v=0.6" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&amp;display=swap" rel="stylesheet">
+<link rel="shortcut icon" href="images/favicon.png" />
+<link href="css/magnific-popupf649.css?v=0.6" rel="stylesheet">
+<link href="css/aosf649.css?v=0.6" rel="stylesheet">
+<link href="css/stylef649.css?v=0.6" rel="stylesheet">
+<link href="css/menuf649.css?v=0.6" rel="stylesheet">
+<link href="css/rwdf649.css?v=0.6" rel="stylesheet">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4QK3PE2JV6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-4QK3PE2JV6');
+</script>
+
+<style>
+/* Custom styling for about.html matching contact.html dark background & theme */
+html,
+body {
+    min-height: 100%;
+    background: linear-gradient(180deg, #0b1320 0%, #152131 100%) !important;
+    color: #ffffff;
+}
+
+body.about-page {
+    background: transparent !important;
+}
+
+.about-main-container {
+    padding-top: 40px;
+    padding-bottom: 70px;
+    min-height: 100vh;
+}
+
+/* Full-Width Cinematic Hero Banner Section */
+.about-hero-fullwrapper {
+    position: relative;
+    width: 100%;
+    min-height: 480px;
+    background: #0b1320;
+    overflow: hidden;
+    margin-bottom: 50px;
+    border-bottom: 1px solid rgba(56, 189, 248, 0.25);
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.6);
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Background Crossfade Animation using cimg1.png, cimg2.png, cimg3.png */
+.cinematic-bg-slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.cinematic-bg-slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    animation: cinematicCrossfade 15s infinite ease-in-out;
+    transform: scale(1);
+    transition: transform 15s ease-out;
+    filter: brightness(1.15) contrast(1.05);
+}
+
+.cinematic-bg-slide:nth-child(1) {
+    background-image: url('images/about_img/cimg1.png');
+    animation-delay: 0s;
+}
+
+.cinematic-bg-slide:nth-child(2) {
+    background-image: url('images/about_img/cimg2.png');
+    animation-delay: 5s;
+}
+
+.cinematic-bg-slide:nth-child(3) {
+    background-image: url('images/about_img/cimg3.png');
+    animation-delay: 10s;
+}
+
+@keyframes cinematicCrossfade {
+    0% { opacity: 0; transform: scale(1); }
+    8% { opacity: 1; }
+    33% { opacity: 1; transform: scale(1.05); }
+    41% { opacity: 0; transform: scale(1.08); }
+    100% { opacity: 0; }
+}
+
+/* Futuristic Tech Pattern, Glow & Particles Overlays */
+.hero-tech-pattern-overlay {
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    background-image: 
+        radial-gradient(rgba(56, 189, 248, 0.12) 1px, transparent 1px),
+        linear-gradient(to right, rgba(56, 189, 248, 0.05) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(56, 189, 248, 0.05) 1px, transparent 1px);
+    background-size: 32px 32px, 48px 48px, 48px 48px;
+    pointer-events: none;
+}
+
+.hero-cyan-glow-orb {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    filter: blur(110px);
+    opacity: 0.35;
+    z-index: 2;
+    pointer-events: none;
+    animation: glowPulse 7s infinite alternate ease-in-out;
+}
+
+.hero-cyan-glow-orb.top-left {
+    top: -150px;
+    left: -100px;
+    background: radial-gradient(circle, #38bdf8 0%, rgba(14, 165, 233, 0) 70%);
+}
+
+.hero-cyan-glow-orb.bottom-right {
+    bottom: -150px;
+    right: -100px;
+    background: radial-gradient(circle, #818cf8 0%, rgba(99, 102, 241, 0) 70%);
+}
+
+@keyframes glowPulse {
+    0% { opacity: 0.25; transform: scale(0.92); }
+    100% { opacity: 0.45; transform: scale(1.08); }
+}
+
+.hero-particles {
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    pointer-events: none;
+    background: radial-gradient(circle at 15% 25%, rgba(56, 189, 248, 0.4) 2px, transparent 3px),
+                radial-gradient(circle at 75% 15%, rgba(129, 140, 248, 0.4) 2px, transparent 3px),
+                radial-gradient(circle at 35% 65%, rgba(56, 189, 248, 0.3) 2px, transparent 3px),
+                radial-gradient(circle at 85% 75%, rgba(192, 132, 252, 0.35) 2px, transparent 3px);
+    background-size: 220px 220px;
+    animation: particleFloat 25s linear infinite;
+}
+
+@keyframes particleFloat {
+    0% { background-position: 0 0, 0 0, 0 0, 0 0; }
+    100% { background-position: 220px -220px, -220px 220px, 110px -110px, -110px 110px; }
+}
+
+.cinematic-overlay-scrim {
+    position: absolute;
+    inset: 0;
+    z-index: 3;
+    background: radial-gradient(circle at 50% 30%, rgba(11, 19, 32, 0.15) 0%, rgba(11, 19, 32, 0.82) 90%),
+                linear-gradient(180deg, rgba(11, 19, 32, 0.6) 0%, rgba(15, 23, 42, 0.2) 45%, rgba(11, 19, 32, 0.95) 100%);
+}
+
+.relative-z {
+    position: relative;
+    z-index: 4;
+}
+
+.cinematic-hero-content {
+    position: relative;
+    z-index: 4;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 400px;
+    width: 100%;
+}
+
+.cinematic-hero-header-box {
+    padding: 20px 0 40px 0;
+}
+
+@media (max-width: 768px) {
+    .about-hero-fullwrapper {
+        padding-top: 25px;
+        min-height: auto;
+    }
+    .cinematic-hero-header-box {
+        padding: 10px 0 20px 0;
+    }
+    .cinematic-stats-ribbon {
+        padding: 20px 20px !important;
+        border-radius: 16px !important;
+    }
+}
+
+.cinematic-breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.82rem;
+    color: rgba(255, 255, 255, 0.85);
+    font-weight: 600;
+    margin-bottom: 22px;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.7);
+}
+
+.cinematic-breadcrumb a {
+    color: #38bdf8;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.cinematic-breadcrumb a:hover {
+    color: #7dd3fc;
+}
+
+.cinematic-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 16px;
+    border-radius: 999px;
+    background: rgba(11, 19, 32, 0.75);
+    border: 1px solid rgba(56, 189, 248, 0.45);
+    color: #38bdf8;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.gradient-glow-text {
+    background: linear-gradient(90deg, #38bdf8 0%, #818cf8 50%, #c084fc 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(0 2px 10px rgba(56, 189, 248, 0.3));
+}
+
+/* Cinematic Hero Stats Bar */
+.cinematic-stats-ribbon {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    background: rgba(11, 19, 32, 0.75);
+    padding: 24px 36px;
+    border: 1px solid rgba(56, 189, 248, 0.25);
+    border-bottom: none;
+    border-radius: 20px 20px 0 0;
+    backdrop-filter: blur(16px);
+    margin-top: auto;
+    width: 100%;
+    box-shadow: 0 -10px 30px rgba(0, 0, 0, 0.35);
+}
+
+.stat-item {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.stat-icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 14px;
+    background: rgba(56, 189, 248, 0.15);
+    border: 1px solid rgba(56, 189, 248, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #38bdf8;
+    font-size: 1.15rem;
+    flex-shrink: 0;
+    box-shadow: 0 0 15px rgba(56, 189, 248, 0.2);
+}
+
+.stat-num {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #ffffff;
+    line-height: 1;
+    margin-bottom: 4px;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.6);
+}
+
+.stat-lbl {
+    font-size: 0.76rem;
+    color: rgba(255, 255, 255, 0.85);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    font-weight: 600;
+}
+
+/* Cinematic Dual Visual Overview Cards */
+.cinematic-card {
+    background: rgba(15, 23, 42, 0.85);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 28px;
+    overflow: hidden;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    backdrop-filter: blur(16px);
+    transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.35);
+}
+
+.cinematic-card:hover {
+    transform: translateY(-6px);
+    border-color: rgba(56, 189, 248, 0.4);
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.5), 0 0 30px rgba(56, 189, 248, 0.15);
+}
+
+.cinematic-img-frame {
+    position: relative;
+    width: 100%;
+    height: 260px;
+    overflow: hidden;
+}
+
+.cinematic-img-frame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+    filter: brightness(1.08) contrast(1.05);
+}
+
+.cinematic-card:hover .cinematic-img-frame img {
+    transform: scale(1.06);
+}
+/*
+.cinematic-img-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, transparent 40%, rgba(15, 23, 42, 0.85) 100%);
+}*/
+
+.cinematic-card-body {
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: space-between;
+}
+
+.cinematic-pill-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 16px;
+    border-radius: 999px;
+    background: rgba(56, 189, 248, 0.15);
+    border: 1px solid rgba(56, 189, 248, 0.35);
+    color: #38bdf8;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+    width: fit-content;
+}
+
+.cinematic-card-title {
+    font-size: clamp(1.4rem, 2.2vw, 1.85rem);
+    font-weight: 800;
+    line-height: 1.25;
+    color: #ffffff;
+    margin-bottom: 16px;
+}
+
+.cinematic-card-desc {
+    color: rgba(255, 255, 255, 0.82);
+    font-size: 0.96rem;
+    line-height: 1.7;
+    margin-bottom: 24px;
+}
+
+.cinematic-feature-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: auto;
+    padding-top: 18px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.cinematic-feature-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.92);
+    font-weight: 500;
+}
+
+.cinematic-feature-item i {
+    color: #38bdf8;
+    font-size: 0.95rem;
+}
+
+/* Operations section dark card */
+.operations-card {
+    background: #1e2a3c;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 30px;
+    box-shadow: 0 30px 80px rgba(0, 0, 0, 0.18);
+    padding: 45px;
+    margin-top: 60px;
+}
+
+.op-detail-card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 18px;
+    padding: 24px;
+    margin-bottom: 20px;
+}
+
+.op-detail-card h5 {
+    color: #ffffff;
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.op-detail-card p {
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 0.92rem;
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+
+.op-image {
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+}
+
+/* Override old css rules that pushed elements down */
+.features-area .about-image,
+.about-image,
+.features-area .about-text,
+.about-text {
+    margin-top: 0 !important;
+    padding-left: 0 !important;
+}
+
+.about-text h3 {
+    margin-top: 0 !important;
+}
+</style>
+</head>
+<body class="about-page">
+
+ <div id="sticky-anchor"></div>
+<header>
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-auto col-auto align-items-center d-flex">
+        <button type="button" class="navbar-toggle collapsed js-offcanvas-btn"> <span class="hiraku-open-btn-line"></span> </button>
+		  <div class="logo">
+        <a href="index.html"> <img src="images/simba-logo-new.png" class="d-block headLogo" alt="SiMBa">
+          </a> </div> </div>
+      <div class="col d-flex align-items-center mt-11">
+        <div class="fm-lg js-offcanvas navbarNav"> <span class="close closeNav">X</span>
+			<ul class="d-lg-flex mb-0 p-0">
+				<li><a class="noactive" href="index.html">Home</a></li>
+				<li><a class="active" href="about.html">About Us</a></li>
+				<li><a class="noactive" href="services/index.html">Services</a></li>
+
+					<li class="dropdown-item-custom">
+					<a class="noactive" href="articles.html">Products<i class="fa fa-caret-down"></i></a>
+					<div class="dropdown-menu-custom">
+						<a href="payment-service.html">Payment Service</a>
+						<a href="notification-service.html">Notification Service</a>
+						<a href="blog-management.html">Blog Management</a>
+					</div>
+				</li>
+
+				<li><a class="noactive" href="portfolio.html">Portfolio</a></li>
+				<li><a class="noactive" href="careers.html">Careers</a></li>
+				<li class="dropdown-item-custom">
+					<a class="noactive" href="articles.html">Articles <i class="fa fa-caret-down"></i></a>
+					<div class="dropdown-menu-custom">
+						<a href="team.html">Team</a>
+						<a href="goals.html">Goals</a>
+						<a href="benefits.html">Benefits</a>
+					</div>
+				</li>
+			</ul>
+        </div>
+        <div class="ms-auto headContac"> <a href="contact.html" class="but">Contact</a> </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- Full-Width Cinematic Hero Banner Section with Background Crossfade Slider & Tech Overlays -->
+<section class="about-hero-fullwrapper aos-init" data-aos="fade-up">
+    <!-- Animated Background Image Slider (cimg1.png, cimg2.png, cimg3.png) -->
+    <div class="cinematic-bg-slider">
+        <div class="cinematic-bg-slide"></div>
+        <div class="cinematic-bg-slide"></div>
+        <div class="cinematic-bg-slide"></div>
+    </div>
+    
+    <!-- Futuristic Tech Grid, Orbs, and Particles Overlays -->
+    <div class="hero-tech-pattern-overlay"></div>
+    <div class="hero-cyan-glow-orb top-left"></div>
+    <div class="hero-cyan-glow-orb bottom-right"></div>
+    <div class="hero-particles"></div>
+    <div class="cinematic-overlay-scrim"></div>
+    
+    <div class="container relative-z">
+        <div class="cinematic-hero-content">
+            <div class="cinematic-hero-header-box">
+                <div class="cinematic-breadcrumb">
+                    <a href="index.html">Home</a>
+                    <i class="fa fa-angle-right"></i>
+                    <span>About Us</span>
+                </div>
+                
+                <span class="cinematic-badge mb-0">
+                    <i class="fa fa-star"></i> GLOBAL IT & SOFTWARE SERVICES
+                </span>
+            </div>
+            
+            <div class="cinematic-stats-ribbon">
+                <div class="stat-item">
+                    <div class="stat-icon"><i class="fa fa-building"></i></div>
+                    <div>
+                        <div class="stat-num">15+</div>
+                        <div class="stat-lbl">Years Experience</div>
+                    </div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon"><i class="fa fa-rocket"></i></div>
+                    <div>
+                        <div class="stat-num">500+</div>
+                        <div class="stat-lbl">Projects Delivered</div>
+                    </div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon"><i class="fa fa-shield"></i></div>
+                    <div>
+                        <div class="stat-num">99.9%</div>
+                        <div class="stat-lbl">Platform SLA</div>
+                    </div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon"><i class="fa fa-users"></i></div>
+                    <div>
+                        <div class="stat-num">100%</div>
+                        <div class="stat-lbl">Dedicated Support</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="about-main-container">
+    <div class="container">
+
+        <!-- Main About Overview Section (Dual Visual Cinematic Cards) -->
+        <div id="overview-section" class="row g-4 align-items-stretch">
+            <div class="col-md-6 col-lg-6">
+                <div class="cinematic-card aos-init" data-aos="fade-up">
+                    <!--<div class="cinematic-img-frame">
+                        <img src="images/about_img/cimg2.png" alt="Smart Digital Solutions">
+                        <div class="cinematic-img-overlay"></div>
+                    </div>-->
+                    
+                    <div class="cinematic-card-body">
+                        <div>
+                            <span class="cinematic-pill-tag"><i class="fa fa-bullseye"></i> ABOUT US</span>
+                            <h2 class="cinematic-card-title">Smart Digital Solutions for Modern Enterprises</h2>
+                            <p class="cinematic-card-desc">
+                                We help businesses grow with reliable payment services, notification services, and blog management solutions. Our technology-driven approach ensures secure transactions, seamless communication, and engaging content management for organizations of all sizes.
+                            </p>
+                        </div>
+                        <div class="cinematic-feature-list">
+                            <div class="cinematic-feature-item">
+                                <i class="fa fa-check-circle"></i> Multi-Channel Payment Gateways
+                            </div>
+                            <div class="cinematic-feature-item">
+                                <i class="fa fa-check-circle"></i> High-Throughput Notification Dispatch Systems
+                            </div>
+                            <div class="cinematic-feature-item">
+                                <i class="fa fa-check-circle"></i> Enterprise CMS & Content Architecture
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6 col-lg-6">
+                <div class="cinematic-card aos-init" data-aos="fade-up" data-aos-delay="100">
+                    <!--<div class="cinematic-img-frame">
+                        <img src="images/about_img/cimg3.png" alt="Delivering Scalable IT Services">
+                        <div class="cinematic-img-overlay"></div>
+                    </div>-->
+                    
+                    <div class="cinematic-card-body">
+                        <div>
+                            <span class="cinematic-pill-tag"><i class="fa fa-cogs"></i> WHO WE ARE</span>
+                            <h2 class="cinematic-card-title">Delivering Scalable IT & Software Services</h2>
+                            <p class="cinematic-card-desc">
+                                Simba India Pvt. Ltd. is an innovative IT company dedicated to delivering digital solutions that simplify business operations. We specialize in payment processing, automated notifications, and professional blog management services.
+                            </p>
+                        </div>
+                        <div class="cinematic-feature-list">
+                            <div class="cinematic-feature-item">
+                                <i class="fa fa-check-circle"></i> End-to-End Full-Stack Software Engineering
+                            </div>
+                            <div class="cinematic-feature-item">
+                                <i class="fa fa-check-circle"></i> 24/7 Physical & Digital SecOps Center
+                            </div>
+                            <div class="cinematic-feature-item">
+                                <i class="fa fa-check-circle"></i> Future-Proof Architecture & Cloud Infrastructure
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section 2: Cinematic Operations Block -->
+        <div class="cinematic-card mt-5 p-4 p-md-5 aos-init" data-aos="fade-up">
+            <div class="d-flex flex-wrap justify-content-between align-items-center mb-4 pb-3 border-bottom border-secondary border-opacity-25">
+                <div>
+                    <span class="cinematic-pill-tag mb-2"><i class="fa fa-building"></i> INDIA OPERATIONS</span>
+                    <h2 class="text-white font-weight-bold mb-0" style="font-size: 1.85rem; font-weight: 800;">Our World-Class Operational Hub</h2>
+                </div>
+                <a href="contact.html" class="btn-cinematic-glow mt-3 mt-md-0">
+                    Contact Operations <i class="fa fa-arrow-right ms-1"></i>
+                </a>
+            </div>
+            
+            <div class="row g-4 align-items-center">
+                <div class="col-lg-6">
+                    <div class="cinematic-img-frame" style="border-radius: 20px; height: 320px;">
+                        <img src="images/world-trade-tower-noida7e0c.jpg?v=0.1" alt="World Trade Tower Noida" class="op-image">
+                        <div class="cinematic-img-overlay"></div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6">
+                    <div class="op-detail-card" style="background: rgba(255, 255, 255, 0.04); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 20px; padding: 24px; margin-bottom: 20px;">
+                        <h5 class="d-flex align-items-center gap-2" style="color: #38bdf8; font-weight: 700;">
+                            <i class="fa fa-building-o text-primary"></i> Class “A” Facility
+                        </h5>
+                        <p style="color: rgba(255, 255, 255, 0.8); font-size: 0.94rem; line-height: 1.65; margin-bottom: 0;">
+                            12,786 square feet facility with full utilities and 100% power backup. Located in Noida (New Delhi Suburb), close to major airport, tier 1 city infrastructure with a large pool of IT professionals.
+                        </p>
+                    </div>
+                    
+                    <div class="op-detail-card mb-0" style="background: rgba(255, 255, 255, 0.04); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 20px; padding: 24px;">
+                        <h5 class="d-flex align-items-center gap-2" style="color: #38bdf8; font-weight: 700;">
+                            <i class="fa fa-shield text-primary"></i> 24/7 Physical & Digital Security
+                        </h5>
+                        <p style="color: rgba(255, 255, 255, 0.8); font-size: 0.94rem; line-height: 1.65; margin-bottom: 0;">
+                            Inside World Trade Tower with 24/7/365 security guards and HD CCTV coverage across the floor. Virtual Private Networks (VPN), fire suppression systems, and alarms installed.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+	<footer id="footer" class="border-top-0 m-0 lazyloaded footer" data-bg-src="img/demos/business-consulting-3/backgrounds/background-4.jpg" style="background-size: cover; background-position: center; background-repeat: no-repeat;" aos-init data-aos="fade-up">
+				<div class="container pt-3">
+					<div class="row justify-content-between align-items-center  mb-3">
+						<div class="col-auto mb-4 mb-lg-0">
+							<h2 class="font-weight-semibold text-color-light text-10 ls-0 mb-0"></h2>
+						</div>
+						<div class="col-auto">
+							<a href="contact.html" class="btn btn-primary footerbutt" data-cursor-effect-hover="plus" data-cursor-effect-hover-color="light">
+								<span class="text-color-light">Contact Us</span>
+							</a>
+						</div>
+					</div>
+					<hr class="bg-color-light opacity-1 my-0">
+					<div class="row pt-3 mt-5">
+						<div class="col-lg-3 mb-4 mb-lg-0">
+							<a href="index.html" class="text-decoration-none">
+								<img src="images/simba-logo-new.png" class="img-fluid mb-4" width="123" height="33" alt="SiMBa">
+							</a>
+						</div>
+						<div class="col-lg-4 mb-4 mb-lg-0">
+							<ul class="list list-icons list-icons-lg">
+								<li class="d-flex px-0 mb-1">
+									<div class="animated-icon animated fadeIn svg-fill-color-light">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 419 420" style="enable-background:new 0 0 419 420;" xml:space="preserve" id="icon_151720682784544" data-filename="phone.svg" width="25" height="25">
+	<path d="M303.7,411.1c-15.6-0.1-31.2-2.1-46.4-5.9c-52.4-12.6-106.4-44.7-152-90.4s-77.7-99.6-90.4-152
+		C1.7,107.8,11.2,60.6,41.7,30.1l8.7-8.7c16.5-16.4,43.1-16.4,59.6,0l50.1,50.1c16.5,16.5,16.5,43.2,0,59.6l-29.6,29.6
+		c14.2,24.9,33.5,49.8,56.3,72.6s47.8,42.1,72.6,56.3l29.6-29.6c16.5-16.5,43.1-16.5,59.6,0c0,0,0,0,0,0l50.1,50.1
+		c16.5,16.5,16.5,43.1,0,59.6l-8.7,8.7C368.5,400,338.7,411.1,303.7,411.1z M80.2,39c-3.2,0-6.3,1.3-8.6,3.6l-8.7,8.7
+		c-22.9,22.9-29.6,60-18.8,104.5c11.4,47.1,40.6,96.1,82.4,137.9s90.7,71,137.9,82.4c44.5,10.7,81.6,4.1,104.5-18.8l8.7-8.7
+		c4.7-4.7,4.7-12.4,0-17.2l-50.1-50.1c-4.7-4.7-12.4-4.7-17.2,0l-37.5,37.5c-4.6,4.6-11.7,5.7-17.5,2.7c-30.8-15.9-61.8-39-89.6-67
+		s-51-58.9-66.9-89.6c-3-5.8-1.9-12.9,2.7-17.5l37.5-37.5c4.7-4.7,4.7-12.4,0-17.2L88.8,42.6C86.5,40.3,83.4,39,80.2,39z"></path>
+	<path d="M319.8,230.7c-8.3,0-15-6.7-15-15l0,0c-0.1-54.8-44.5-99.2-99.3-99.3c-8.3,0-15-6.7-15-15s6.7-15,15-15l0,0
+		c71.3,0,129.3,58,129.3,129.3C334.8,224,328,230.7,319.8,230.7C319.8,230.7,319.8,230.7,319.8,230.7z"></path>
+	<path d="M383.1,230.7c-8.3,0-15-6.7-15-15l0,0c0-89.7-73-162.7-162.6-162.7c-8.3,0-15-6.7-15-15s6.7-15,15-15l0,0
+		c106.2,0,192.6,86.4,192.6,192.7C398.1,224,391.4,230.7,383.1,230.7L383.1,230.7z"></path>
+</svg></div>
+									<a href="tel:1234567890" class="text-color-light font-weight-semibold text-3-4 ms-2">+91 9958212395</a>
+								</li>
+								<li class="d-flex px-0 my-3">
+									<div class="animated-icon animated fadeIn svg-fill-color-light"><i class="fa fa-envelope"></i></div>
+									<a href="mailto:info@simba.com" class="text-color-light font-weight-semibold text-3-4 ms-2">info@simbaindia.com</a>
+								</li>
+								<li class="d-flex font-weight-semibold text-color-light px-0 mb-1" style="color: #fff; font-weight: 700;">
+									<div class="animated-icon animated fadeIn svg-fill-color-light me-2">
+<svg version="1.1" id="icon_101720682784541" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 330 433" style="enable-background:new 0 0 330 433;" xml:space="preserve" data-filename="map-pin.svg" width="25" height="25">
+	<path d="M165,414.2c-2.6,0-5.1-0.7-7.3-1.9C68.3,362.4,13,268.1,13,165.8c0-2.1,0-4.1,0.1-6.1c1-45.5,17.9-83.8,49-110.8
+		C89.5,25.1,126.1,12,165,12s75.5,13.1,102.9,36.9c31.1,27,48.1,65.3,49,110.8l0,0c0,2,0.1,4.1,0.1,6.1c0,51-13.8,101.1-40,144.9
+		c-25.4,42.4-61.5,77.4-104.6,101.6C170.1,413.5,167.6,414.2,165,414.2z M165,42c-31.7,0-61.3,10.5-83.3,29.6
+		c-24.5,21.3-37.9,51.9-38.7,88.7c0,1.8-0.1,3.7-0.1,5.5c0,88.4,46.3,170.4,122,216c35.4-21.4,65-51.1,86.3-86.6
+		c23.4-39.1,35.7-83.8,35.7-129.4c0-1.8,0-3.7-0.1-5.5c-0.8-36.8-14.2-67.5-38.7-88.7C226.3,52.5,196.7,42,165,42z"></path>
+	<path d="M165.4,260.6c-52.1,0-94.3-42.2-94.3-94.3S113.3,72,165.4,72s94.3,42.2,94.3,94.3C259.7,218.3,217.5,260.5,165.4,260.6z
+		 M165.4,102c-35.5,0-64.3,28.8-64.3,64.3s28.8,64.3,64.3,64.3s64.3-28.8,64.3-64.3c0,0,0,0,0,0C229.6,130.8,200.9,102,165.4,102
+		L165.4,102z"></path>
+</svg>
+
+
+</div>Simba India<br>
+             New Delhi - 110018 <br>India
+</li>
+							</ul>
+						</div>
+						<div class="col-lg-5 mb-4 mb-lg-0">
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3321.8402311082286!2d-117.60599252430136!3d33.63538437331677!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dceba4309c49ab%3A0x84055812e8013369!2s30211%20Avenida%20de%20las%20Banderas%2C%20Rancho%20Santa%20Margarita%2C%20CA%2092688%2C%20USA!5e0!3m2!1sen!2sin!4v1723709971781!5m2!1sen!2sin" width="100%" height="190" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+							</div>
+
+					</div>
+				</div>
+				<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+				<div class="footer-copyright container bg-transparent">
+					<div class="row">
+						<div class="col-lg-12 text-center m-0">
+							<hr class="bg-color-light opacity-1 mt-5 mb-4">
+							<p class="text-3-4">Copyright © 2026 | All Rights Reserved | <a href="disclaimer.html" style="color: #fff; text-decoration: underline;">Disclaimer</a></p>
+						</div>
+					</div>
+				</div>
+			</footer>
+	<script src="js/jquery-min1f6b.js?v=0.5"></script>
+<script src="js/bootstrap.bundle.min1f6b.js?v=0.5"></script>
+<script src="js/jquery-magnific-popup-min1f6b.js?v=0.5"></script>
+<script src="js/jquery.menu1f6b.js?v=0.5"></script>
+<script src="js/aos1f6b.js?v=0.5"></script>
+<script src="js/wow1f6b.js?v=0.5"></script>
+<script src="js/custom1f6b.js?v=0.5"></script>
+
+</body>
+<script>'undefined'=== typeof _trfq || (window._trfq = []);'undefined'=== typeof _trfd && (window._trfd=[]),_trfd.push({'tccl.baseHost':'secureserver.net'},{'ap':'cpsh-oh'},{'server':'p3plzcpnl505160'},{'dcenter':'p3'},{'cp_id':'9957720'},{'cp_cl':'8'})</script><script src='https://img1.wsimg.com/signals/js/clients/scc-c2/scc-c2.min.js'></script>
+</html>
+

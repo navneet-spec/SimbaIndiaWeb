@@ -1,0 +1,1462 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SiMBa: Leave The Tech To Us</title>
+<meta name="description" content="SiMBa is an IT Services, consulting and global full-stack software development organization.">
+<link rel="canonical" href="index.html">
+<link href="css/bootstrap.minf649.css?v=0.6" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&amp;family=Poppins:wght@300;400;500;600;700;900&amp;display=swap" rel="stylesheet">
+<link rel="shortcut icon" href="images/favicon.png" />
+<link href="css/magnific-popupf649.css?v=0.6" rel="stylesheet">
+<link href="css/aosf649.css?v=0.6" rel="stylesheet">
+<link href="css/stylef649.css?v=0.6" rel="stylesheet">
+<link href="css/menuf649.css?v=0.6" rel="stylesheet">
+<link href="css/rwdf649.css?v=0.6" rel="stylesheet">
+<link href="css/rajstyle.css" rel="stylesheet">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4QK3PE2JV6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-4QK3PE2JV6');
+</script>
+<link rel="stylesheet" href="https://unpkg.com/bs-brain@2.0.4/components/heroes/hero-3/assets/css/hero-3.css">
+</head>
+<body>
+
+ <div id="sticky-anchor"></div>
+<header>
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-auto col-auto align-items-center d-flex">
+        <button type="button" class="navbar-toggle collapsed js-offcanvas-btn"> <span class="hiraku-open-btn-line"></span> </button>
+		  <div class="logo">
+        <a href="index.html"> <img src="images/simba-logo-new.png" class="d-block headLogo" alt="SiMBa">
+          </a> </div> </div>
+      <div class="col d-flex align-items-center mt-11">
+        <div class="fm-lg js-offcanvas navbarNav"> <span class="close closeNav">X</span>
+			<ul class="d-lg-flex mb-0 p-0">
+				<li><a class="active" href="index.html">Home</a></li>
+				<li><a class="noactive" href="about.html">About Us</a></li>
+				<li><a class="noactive" href="services/index.html">Services</a></li>
+
+					<li class="dropdown-item-custom">
+					<a class="noactive" href="articles.html">Products<i class="fa fa-caret-down"></i></a>
+					<div class="dropdown-menu-custom">
+						<a href="payment-service.html">Payment Service</a>
+						<a href="notification-service.html">Notification Service</a>
+						<a href="blog-management.html">Blog Management</a>
+					</div>
+				</li>
+
+				<li><a class="noactive" href="portfolio.html">Portfolio</a></li>
+				<li><a class="noactive" href="careers.html">Careers</a></li>
+				<li class="dropdown-item-custom">
+					<a class="noactive" href="articles.html">Articles <i class="fa fa-caret-down"></i></a>
+					<div class="dropdown-menu-custom">
+						<a href="team.html">Team</a>
+						<a href="goals.html">Goals</a>
+						<a href="benefits.html">Benefits</a>
+					</div>
+				</li>
+			</ul>
+        </div>
+        <div class="ms-auto headContac"> <a href="contact.html" class="but">Contact</a> </div>
+      </div>
+    </div>
+  </div>
+</header>
+<style>
+/* Custom dark theme background matching contact.html, team.html, about.html, careers.html, etc. */
+html,
+body {
+    min-height: 100%;
+    background: linear-gradient(180deg, #2b3445 0%, #152131 100%) !important;
+    color: #ffffff;
+}
+
+section, article {
+    background: transparent !important;
+}
+
+/* Override all light-theme background classes from stylef649.css */
+.bg, .bg-fbf9f8 {
+    background: transparent !important;
+    background-color: transparent !important;
+}
+
+.ourOffer {
+    background: transparent !important;
+    background-color: transparent !important;
+}
+
+/* Override green buttons from base theme */
+.btn-primary {
+    background-color: #1565ff !important;
+    border-color: #1565ff !important;
+}
+
+.btn-primary:hover {
+    background-color: #0d52d4 !important;
+    border-color: #0d52d4 !important;
+}
+
+/* Override green text colors from base theme */
+.section-title span,
+.analysis-text span {
+    color: #60a5fa !important;
+}
+
+.section-title .read-more-btn,
+.read-more-btn {
+    color: #60a5fa !important;
+    position: relative !important;
+}
+
+/* Override white single-services cards from base CSS */
+.single-services {
+    background: #1e2a3c !important;
+    color: #ffffff !important;
+}
+
+.single-services:hover {
+    background: #243349 !important;
+}
+
+.single-services .icon {
+    background: rgba(21, 101, 255, 0.15) !important;
+}
+
+.topbanner-cinematic {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  padding: 0 15px;
+}
+
+/* Slideshow Container */
+.cinematic-bg-slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  overflow: hidden;
+}
+
+/* Semi-transparent Dark overlay */
+.cinematic-bg-slider::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: 2;
+}
+
+.cinematic-bg-slider .slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0;
+  z-index: 1;
+  transform: scale(1.02);
+  transition: opacity 1.5s ease-in-out, transform 6s linear;
+}
+
+.cinematic-bg-slider .slide.active {
+  opacity: 1;
+  z-index: 2;
+  transform: scale(1.08);
+}
+
+.container-cinematic {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  max-width: 1140px;
+}
+
+.cinematic-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  perspective: 1000px;
+}
+
+.cinematic-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.4rem;
+  font-weight: 800;
+  margin-bottom: 2.5rem;
+  letter-spacing: 0.08em;
+  text-align: center;
+  color: #fff9c4;
+  text-transform: uppercase;
+  transform-style: preserve-3d;
+  transition: opacity 0.5s ease;
+  opacity: 1;
+  animation: cinematic3DFloat 6s ease-in-out infinite;
+  text-shadow:
+    0 1px 0 #fdd835,
+    0 2px 0 #fbc02d,
+    0 3px 0 #f9a825,
+    0 4px 0 #f57f17,
+    0 5px 0 #ff6f00,
+    0 6px 1px rgba(0,0,0,0.25),
+    0 0 12px rgba(253, 216, 53, 0.55),
+    0 2px 8px rgba(0,0,0,0.4),
+    0 6px 12px rgba(0,0,0,0.35),
+    0 12px 20px rgba(0,0,0,0.3),
+    0 20px 28px rgba(0,0,0,0.35);
+}
+
+.cinematic-title.fade-out {
+  opacity: 0;
+}
+
+@keyframes cinematic3DFloat {
+  0% {
+    transform: translateY(0) rotateX(12deg) rotateY(-8deg) scale(1);
+    text-shadow:
+      0 1px 0 #fdd835,
+      0 2px 0 #fbc02d,
+      0 3px 0 #f9a825,
+      0 4px 0 #f57f17,
+      0 5px 0 #ff6f00,
+      0 6px 1px rgba(0,0,0,0.25),
+      0 0 12px rgba(253, 216, 53, 0.55),
+      0 2px 8px rgba(0,0,0,0.4),
+      0 6px 12px rgba(0,0,0,0.35),
+      0 12px 20px rgba(0,0,0,0.3),
+      0 20px 28px rgba(0,0,0,0.35);
+  }
+  50% {
+    transform: translateY(-12px) rotateX(15deg) rotateY(8deg) scale(1.04);
+    text-shadow:
+      0 1px 0 #fff9c4,
+      0 2px 0 #fff176,
+      0 3px 0 #ffee58,
+      0 4px 0 #fdd835,
+      0 5px 0 #fbc02d,
+      0 6px 1px rgba(0,0,0,0.25),
+      0 0 16px rgba(255, 241, 118, 0.7),
+      0 2px 10px rgba(0,0,0,0.45),
+      0 6px 16px rgba(0,0,0,0.4),
+      0 12px 24px rgba(0,0,0,0.35),
+      0 20px 32px rgba(0,0,0,0.4);
+  }
+  100% {
+    transform: translateY(0) rotateX(12deg) rotateY(-8deg) scale(1);
+    text-shadow:
+      0 1px 0 #fdd835,
+      0 2px 0 #fbc02d,
+      0 3px 0 #f9a825,
+      0 4px 0 #f57f17,
+      0 5px 0 #ff6f00,
+      0 6px 1px rgba(0,0,0,0.25),
+      0 0 12px rgba(253, 216, 53, 0.55),
+      0 2px 8px rgba(0,0,0,0.4),
+      0 6px 12px rgba(0,0,0,0.35),
+      0 12px 20px rgba(0,0,0,0.3),
+      0 20px 28px rgba(0,0,0,0.35);
+  }
+}
+
+/* Search Bar Container */
+.cinematic-search-container {
+  position: relative;
+  width: 100%;
+  max-width: 760px;
+  margin-top: 1rem;
+  opacity: 0;
+  transform: translateY(20px);
+  pointer-events: none;
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.cinematic-search-container.visible {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+/* Microphone Button (overlapping the top border) */
+.cinematic-mic-btn {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #1e40af, #2563eb);
+  border: 4px solid #ffffff;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 6px 20px rgba(37, 99, 235, 0.35);
+  cursor: pointer;
+  z-index: 20;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  outline: none;
+}
+
+.cinematic-mic-btn svg {
+  transition: transform 0.2s ease;
+}
+
+.cinematic-mic-btn:hover {
+  transform: translate(-50%, -55%) scale(1.06);
+  background: linear-gradient(135deg, #2563eb, #3b82f6);
+  box-shadow: 0 10px 24px rgba(37, 99, 235, 0.5), 0 0 0 6px rgba(37, 99, 235, 0.2);
+}
+
+.cinematic-mic-btn:hover svg {
+  transform: scale(1.08);
+}
+
+.cinematic-mic-btn:active {
+  transform: translate(-50%, -48%) scale(0.96);
+}
+
+/* Listening State Pulse Animation */
+.cinematic-mic-btn.listening {
+  background: linear-gradient(135deg, #ef4444, #dc2626);
+  box-shadow: 0 0 0 0px rgba(239, 68, 68, 0.5), 0 0 25px rgba(239, 68, 68, 0.7);
+  border-color: #ffffff;
+}
+
+.cinematic-mic-btn.listening svg {
+  animation: micPulse 1.5s infinite;
+}
+
+@keyframes micPulse {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 0.7;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Input Wrapper styling */
+.cinematic-input-wrapper {
+  background: #ffffff;
+  border: 1px solid rgba(226, 232, 240, 0.8);
+  border-radius: 10px;
+  padding: 16px 24px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  min-height: 64px;
+  position: relative;
+  z-index: 10;
+}
+
+.cinematic-input-wrapper:hover {
+  border-color: rgba(203, 213, 225, 1);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.2);
+}
+
+.cinematic-input-wrapper.active-focus {
+  border-color: #2563eb;
+  box-shadow: 0 12px 40px rgba(37, 99, 235, 0.25);
+}
+
+.cinematic-sparkles-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #94a3b8;
+  margin-right: 14px;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.cinematic-input-wrapper.active-focus .cinematic-sparkles-icon {
+  color: #2563eb;
+  transform: rotate(15deg) scale(1.1);
+}
+
+.cinematic-input {
+  border: none;
+  background: transparent;
+  width: 100%;
+  font-size: 1.15rem;
+  color: #1e293b;
+  outline: none;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 200;
+}
+
+.cinematic-input::placeholder {
+  color: #94a3b8;
+  transition: color 0.3s ease;
+}
+
+.cinematic-input-wrapper.listening-mode {
+  border-color: #ef4444;
+  box-shadow: 0 12px 40px rgba(239, 68, 68, 0.15);
+}
+
+.cinematic-input-wrapper.listening-mode .cinematic-input::placeholder {
+  color: #ef4444;
+}
+
+/* Features Area ("We Are") */
+.features-area {
+    padding: 80px 0;
+    background: transparent !important;
+}
+
+.about-image .image {
+    border-radius: 18px !important;
+    overflow: hidden !important;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3) !important;
+    border: 1px solid rgba(255, 255, 255, 0.08) !important;
+    height: 190px !important;
+    background: #1e2a3c !important;
+}
+
+.about-image .image img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    transition: transform 0.4s ease !important;
+}
+
+.about-image .image:hover img {
+    transform: scale(1.06) !important;
+}
+
+.about-text h1 {
+    color: #ffffff !important;
+    font-size: clamp(2.2rem, 3.5vw, 2.8rem) !important;
+    font-weight: 800 !important;
+    margin-bottom: 20px !important;
+}
+
+.about-text .fs-4 {
+    color: #60a5fa !important;
+    font-size: 1.25rem !important;
+    font-weight: 600 !important;
+    margin-bottom: 18px !important;
+    line-height: 1.5 !important;
+}
+
+.about-text p {
+    color: rgba(255, 255, 255, 0.85) !important;
+    font-size: 0.98rem !important;
+    line-height: 1.7 !important;
+    margin-bottom: 16px !important;
+}
+
+.about-text .btn-primary {
+    background: linear-gradient(135deg, #1565ff, #0d52d4) !important;
+    border: none !important;
+    border-radius: 12px !important;
+    padding: 12px 32px !important;
+    font-weight: 700 !important;
+    color: #ffffff !important;
+    box-shadow: 0 8px 20px rgba(21, 101, 255, 0.35) !important;
+    transition: all 0.3s ease !important;
+    margin-top: 10px !important;
+}
+
+.about-text .btn-primary:hover {
+    transform: translateY(-2px) !important;
+    box-shadow: 0 12px 25px rgba(21, 101, 255, 0.5) !important;
+}
+
+/* Our Offer Section ("Services we offer") */
+.ourOffer {
+    padding: 80px 0;
+    background: transparent !important;
+}
+
+.ourOffer .section-title {
+    text-align: center !important;
+    margin-bottom: 45px !important;
+}
+
+.ourOffer .section-title h3 {
+    color: #ffffff !important;
+    font-size: clamp(2rem, 3.5vw, 2.5rem) !important;
+    font-weight: 800 !important;
+    margin-bottom: 15px !important;
+}
+
+.ourOffer .section-title p {
+    color: rgba(255, 255, 255, 0.85) !important;
+    max-width: 680px !important;
+    margin: 0 auto 20px auto !important;
+    font-size: 1.15rem !important;
+}
+
+.read-more-btn {
+    display: inline-block !important;
+    background: rgba(255, 255, 255, 0.08) !important;
+    border: 1px solid rgba(255, 255, 255, 0.15) !important;
+    border-radius: 10px !important;
+    color: #60a5fa !important;
+    padding: 10px 24px !important;
+    font-size: 1rem !important;
+    font-weight: 600 !important;
+    transition: all 0.3s ease !important;
+    text-decoration: none !important;
+}
+
+.read-more-btn:hover {
+    background: #1565ff !important;
+    color: #ffffff !important;
+    border-color: #1565ff !important;
+    box-shadow: 0 8px 20px rgba(21, 101, 255, 0.35) !important;
+}
+
+.ourOffer .thumbnail {
+    background: #1e2a3c !important;
+    border: 1px solid rgba(255, 255, 255, 0.08) !important;
+    border-radius: 20px !important;
+    overflow: hidden !important;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25) !important;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease !important;
+    height: 100% !important;
+    display: flex !important;
+    flex-direction: column !important;
+    margin-bottom: 0 !important;
+}
+
+.ourOffer .thumbnail:hover {
+    transform: translateY(-5px) !important;
+    box-shadow: 0 22px 45px rgba(0, 0, 0, 0.4) !important;
+    border-color: rgba(96, 165, 250, 0.3) !important;
+}
+
+.ourOffer .mask {
+    height: 180px !important;
+    width: 100% !important;
+    overflow: hidden !important;
+    position: relative !important;
+}
+
+.ourOffer .mask:after,
+.ourOffer .stafAugm .mask:after,
+.ourOffer .fulProc .mask:after,
+.ourOffer .opLicen .mask:after,
+.ourOffer .img-style .mask:after {
+    display: none !important;
+}
+
+.ourOffer .mask:hover img {
+    filter: none !important;
+}
+
+.ourOffer .mask img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    transition: transform 0.4s ease !important;
+    top: 0 !important;
+    left: 0 !important;
+    position: relative !important;
+}
+
+.ourOffer .thumbnail:hover .mask img {
+    transform: scale(1.06) !important;
+}
+
+.ourOffer .caption,
+.ourOffer .stafAugm .caption,
+.ourOffer .fulProc .caption,
+.ourOffer .opLicen .caption,
+.ourOffer .img-style .caption {
+    padding: 24px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    flex-grow: 1 !important;
+    text-align: left !important;
+    background: transparent !important;
+    background-color: transparent !important;
+    height: auto !important;
+    max-height: none !important;
+}
+
+.ourOffer .caption h3,
+.ourOffer .stafAugm .caption h3 {
+    color: #ffffff !important;
+    font-size: 1.15rem !important;
+    font-weight: 700 !important;
+    margin-bottom: 10px !important;
+    margin-top: 0 !important;
+}
+
+.ourOffer .caption p,
+.ourOffer .stafAugm .caption p {
+    color: rgba(255, 255, 255, 0.75) !important;
+    font-size: 0.9rem !important;
+    line-height: 1.6 !important;
+    margin-bottom: 18px !important;
+    flex-grow: 1 !important;
+}
+
+.ourOffer .caption a,
+.ourOffer .stafAugm .caption a,
+.ourOffer .fulProc .caption a,
+.ourOffer .opLicen .caption a,
+.ourOffer .img-style .caption a,
+.caption a {
+    display: inline-block !important;
+    align-self: flex-start !important;
+    padding: 8px 22px !important;
+    border-radius: 50px !important;
+    background: #1565ff !important;
+    background-color: #1565ff !important;
+    color: #ffffff !important;
+    font-size: 0.85rem !important;
+    font-weight: 600 !important;
+    text-decoration: none !important;
+    box-shadow: 0 4px 12px rgba(21, 101, 255, 0.3) !important;
+    transition: all 0.3s ease !important;
+    margin-top: auto !important;
+}
+
+.ourOffer .caption a:hover,
+.caption a:hover {
+    background: #0d52d4 !important;
+    background-color: #0d52d4 !important;
+    color: #ffffff !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0 6px 18px rgba(21, 101, 255, 0.45) !important;
+    opacity: 1 !important;
+}
+
+/* Services Area 2 ("Our Goals") */
+.services-area2 {
+    background: transparent !important;
+    padding: 80px 0 !important;
+}
+
+.services-area2 .section-title {
+    text-align: center !important;
+    margin-bottom: 45px !important;
+}
+
+.services-area2 .section-title h3 {
+    color: #ffffff !important;
+    font-size: clamp(2rem, 3.5vw, 2.5rem) !important;
+    font-weight: 800 !important;
+    margin-bottom: 15px !important;
+}
+
+.services-area2 .section-title p {
+    color: rgba(255, 255, 255, 0.85) !important;
+    max-width: 650px !important;
+    margin: 0 auto 20px auto !important;
+    font-size: 1.15rem !important;
+}
+
+.single-services {
+    background: #1e2a3c !important;
+    border: 1px solid rgba(255, 255, 255, 0.08) !important;
+    border-radius: 20px !important;
+    padding: 35px 30px !important;
+    margin-bottom: 30px !important;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2) !important;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease !important;
+    height: calc(100% - 30px) !important;
+}
+
+.single-services:hover {
+    transform: translateY(-5px) !important;
+    box-shadow: 0 22px 45px rgba(0, 0, 0, 0.35) !important;
+    border-color: rgba(96, 165, 250, 0.3) !important;
+}
+
+.single-services .icon {
+    width: 60px !important;
+    height: 60px !important;
+    background: rgba(21, 101, 255, 0.15) !important;
+    border: 1px solid rgba(21, 101, 255, 0.3) !important;
+    border-radius: 16px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 12px !important;
+    margin-bottom: 20px !important;
+}
+
+.single-services .icon img {
+    max-width: 100% !important;
+    max-height: 100% !important;
+    filter: brightness(0) invert(1) !important;
+}
+
+.single-services h3 {
+    color: #ffffff !important;
+    font-size: 1.25rem !important;
+    font-weight: 700 !important;
+    margin-bottom: 12px !important;
+}
+
+.single-services p {
+    color: rgba(255, 255, 255, 0.75) !important;
+    font-size: 0.95rem !important;
+    margin-bottom: 0 !important;
+    line-height: 1.6 !important;
+}
+
+/* Analysis Area ("Request a Quote") */
+.analysis-area {
+    background: transparent !important;
+    padding: 80px 0 !important;
+}
+
+.analysis-form {
+    background: #1e2a3c !important;
+    border: 1px solid rgba(255, 255, 255, 0.08) !important;
+    border-radius: 24px !important;
+    padding: 40px !important;
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.25) !important;
+    text-align: left !important;
+}
+
+.analysis-form h3 {
+    color: #ffffff !important;
+    font-size: 1.75rem !important;
+    font-weight: 800 !important;
+    margin-bottom: 25px !important;
+    text-align: center !important;
+}
+
+.analysis-form .form-group {
+    margin-bottom: 15px !important;
+}
+
+.analysis-form .form-control {
+    background: rgba(255, 255, 255, 0.06) !important;
+    border: 1px solid rgba(255, 255, 255, 0.12) !important;
+    color: #ffffff !important;
+    border-radius: 10px !important;
+    font-size: 0.95rem !important;
+    padding: 12px 18px !important;
+}
+
+.analysis-form .form-control::placeholder {
+    color: rgba(255, 255, 255, 0.45) !important;
+}
+
+.analysis-form .form-control:focus {
+    background: rgba(255, 255, 255, 0.09) !important;
+    border-color: #1565ff !important;
+    box-shadow: 0 0 0 3px rgba(21, 101, 255, 0.25) !important;
+    outline: none !important;
+}
+
+.analysis-form button[type="submit"] {
+    background: #1565ff !important;
+    border: none !important;
+    border-radius: 10px !important;
+    padding: 14px 30px !important;
+    font-weight: 700 !important;
+    letter-spacing: 0.05em !important;
+    box-shadow: 0 8px 20px rgba(21, 101, 255, 0.35) !important;
+    color: #ffffff !important;
+    width: 100% !important;
+    transition: all 0.3s ease !important;
+}
+
+.analysis-form button[type="submit"]:hover {
+    background: #0d52d4 !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0 12px 25px rgba(21, 101, 255, 0.5) !important;
+}
+
+.analysis-text {
+    background: #1e2a3c !important;
+    border: 1px solid rgba(255, 255, 255, 0.08) !important;
+    border-radius: 24px !important;
+    padding: 40px !important;
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.25) !important;
+    height: 100% !important;
+}
+
+.analysis-text span {
+    color: #60a5fa !important;
+    font-size: 0.85rem !important;
+    font-weight: 700 !important;
+    letter-spacing: 0.12em !important;
+    text-transform: uppercase !important;
+    display: inline-block !important;
+    margin-bottom: 8px !important;
+}
+
+.analysis-text h3 {
+    color: #ffffff !important;
+    font-size: 1.75rem !important;
+    font-weight: 800 !important;
+    margin-bottom: 20px !important;
+}
+
+.analysis-text p {
+    color: rgba(255, 255, 255, 0.85) !important;
+    font-size: 0.98rem !important;
+    line-height: 1.7 !important;
+    margin-bottom: 25px !important;
+}
+
+.analysis-text ul {
+    padding: 0 !important;
+    margin: 20px 0 0 !important;
+    list-style-type: none !important;
+}
+
+.analysis-text ul li {
+    color: rgba(255, 255, 255, 0.88) !important;
+    font-size: 0.94rem !important;
+    line-height: 1.6 !important;
+    margin-bottom: 16px !important;
+    padding-left: 28px !important;
+    position: relative !important;
+}
+
+.analysis-text ul li::before {
+    content: '' !important;
+    position: absolute !important;
+    left: 0 !important;
+    top: 6px !important;
+    width: 12px !important;
+    height: 12px !important;
+    background: #1565ff !important;
+    border-radius: 50% !important;
+}
+
+#response {
+    color: #4ade80 !important;
+    font-weight: 600 !important;
+}
+
+footer,
+#footer {
+    background: transparent !important;
+    background-color: transparent !important;
+}
+
+#footer .btn-primary {
+    --hover: #0d52d4 !important;
+    background-color: #1565ff !important;
+    border-color: #1565ff !important;
+}
+
+#footer .btn-primary:hover {
+    background-color: #0d52d4 !important;
+    border-color: #0d52d4 !important;
+}
+
+.footerbutt {
+    background-color: #1565ff !important;
+    border-color: #1565ff !important;
+    border-radius: 10px !important;
+}
+
+.border-warning {
+    border-color: #1565ff !important;
+}
+
+/* Responsiveness */
+@media (max-width: 991px) {
+  .cinematic-title {
+    font-size: 1.4rem;
+    margin-bottom: 2.5rem;
+  }
+  .cinematic-search-container {
+    max-width: 90%;
+  }
+  .cinematic-mic-btn {
+    width: 54px;
+    height: 54px;
+  }
+}
+
+@media (max-width: 576px) {
+  .topbanner-cinematic {
+    height: 80vh;
+  }
+  .cinematic-title {
+    font-size: 1.2rem;
+    margin-bottom: 2.2rem;
+  }
+  .cinematic-input-wrapper {
+    padding: 12px 18px;
+    min-height: 56px;
+  }
+  .cinematic-input {
+    font-size: 1rem;
+  }
+  .cinematic-mic-btn {
+    width: 48px;
+    height: 48px;
+  }
+}
+</style>
+	
+<!--- start Cinematic section --->
+
+<section class="topbanner-cinematic">
+  <!-- Cinematic Background Slider -->
+  <div class="cinematic-bg-slider">
+    <div class="slide active" style="background-image: url('images/cinematic/Software.png');"></div>
+    <div class="slide" style="background-image: url('images/cinematic/Transforming%20businesses%20into%20digital%20solutions.png');"></div>
+    <div class="slide" style="background-image: url('images/cinematic/business-technology.png');"></div>
+    <div class="slide" style="background-image: url('images/cinematic/cloud_compute.png');"></div>
+    <div class="slide" style="background-image: url('images/cinematic/business-technology.png');"></div>
+  </div>
+  
+  <div class="container container-cinematic">
+    <div class="cinematic-content text-center">
+      <h5 class="cinematic-title">Software Development</h5>
+      
+      <!-- Interactive Cinematic Search Bar -->
+      <div class="cinematic-search-container">
+        <!-- Microphone Button (overlapping the top border) -->
+        <button class="cinematic-mic-btn" id="cinematic-mic-trigger" aria-label="Voice Search">
+          <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"></path>
+            <path d="M19 10v1a7 7 0 0 1-14 0v-1"></path>
+            <line x1="12" x2="12" y1="19" y2="22"></line>
+          </svg>
+        </button>
+        
+        <!-- Input Wrapper -->
+        <div class="cinematic-input-wrapper" id="cinematic-input-wrapper">
+          <!-- Sparkles/AI Icon -->
+          <span class="cinematic-sparkles-icon">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+              <!-- Main star -->
+              <path d="M9 2c0 3.866 3.134 7 7 7-3.866 0-7 3.134-7 7 0-3.866-3.134-7-7-7 3.866 0 7-3.134 7-7z"/>
+              <!-- Secondary smaller star -->
+              <path d="M19 13.5c0 1.933 1.567 3.5 3.5 3.5-1.933 0-3 1.567-3.5 3.5 0-1.933-1.567-3.5-3.5-3.5 1.933 0 3-1.567 3.5-3.5z"/>
+            </svg>
+          </span>
+          <input type="text" id="cinematic-input-field" class="cinematic-input" placeholder="Ask me anything" />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+                     <!--- End  Cinematic section --->
+					 
+					 <!--fix start -->
+					       <section class="features-area ptb-100">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 col-md-12 mb-4 mb-lg-0">
+                        <div class="row about-image g-3 aos-init aos-animate" data-aos="fade-up">
+                            <div class="col-6 col-lg-6 col-md-6">
+                                <div class="image">
+                                    <img src="images/about-img1.jpg" alt="about">
+                                </div>
+                            </div>
+                            <div class="col-6 col-lg-6 col-md-6">
+                                <div class="image">
+                                    <img src="images/about-img2.jpg" alt="about">
+                                </div>
+                            </div>
+                            <div class="col-6 col-lg-6 col-md-6">
+                                <div class="image">
+                                    <img src="images/about-img3.jpg" alt="about">
+                                </div>
+                            </div>
+                            <div class="col-6 col-lg-6 col-md-6">
+                                <div class="image">
+                                    <img src="images/about-img4.jpg" alt="about">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12">
+                        <div class="about-text aos-init" data-aos="fade-up">
+                             <h1>We Are</h1>
+                            <p class="fs-4 ">SiMBa is an IT Services, consulting and global full-stack software development organization.</p>
+                            <p>SiMBa is running by the group of business leaders with extensive experience in onshore, nearshore, and offshore software development with successful track record of running IT organization for over 100 years combined.</p>
+                            <p>We are founded based on the philosophy that talent knows no borders what matters is, trust, speed, and quality. With SiMBa, we earn trust by our actions and results, we enable our clients’ speed to market with software products at a highest quality.</p>
+                        <a href="about.html" class="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+	<!--fix end -->
+
+<section class="ourOffer">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="section-title aos-init aos-animate" data-aos="fade-up">
+            <h3>Services we offer</h3>
+            <p class="fs-4">Explore our diverse range of services designed to meet your needs with expertise, efficiency, and dedication.</p>
+            <a href="services/" class="read-more-btn">Read More</a>
+          </div>
+        </div>
+      </div>
+      <div class="row g-4">
+        <div class="col-lg-3 col-md-6 stafAugm aos-init" data-aos="fade-up">
+          <div class="thumbnail">
+            <div class="mask"> <img src="images/staff-augmentation-home7e0c.jpg?v=0.1" class="img-fluid" alt="Staff augmentation"> </div>
+            <div class="caption">
+              <h3 class="fs-4">Staff augmentation</h3>
+              <p>SiMBa can provide fully staffed teams or individual professionals to contribute to your software development project under your direct management.</p>
+              <a href="services/"> Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 fulProc aos-init" data-aos="fade-up">
+          <div class="thumbnail">
+              <div class="mask"> <img src="images/full-process-outsourcing-home.png" class="img-fluid" alt="Full process outsourcing"> </div>
+            <div class="caption">
+              <h3 class="fs-4">Full Lifecycle Outsourcing</h3>
+              <p>SiMBa offers the full-stack engineering team to work on all the stages of the software development </p>
+              <a href="services/full-lifecycle-outsourcing.html"> Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 opLicen aos-init" data-aos="fade-up">
+          <div class="thumbnail">
+            <div class="mask"> <img src="images/ip-licenses-home7e0c.jpg?v=0.1" class="img-fluid" alt="IP Licenses"> </div>
+            <div class="caption">
+              <h3 class="fs-4"> IP Licensing</h3>
+              <p>SiMBa will develop its own set of software, technologies, and services to be licensed to major vendors and industry leaders around the globe. </p>
+              <a href="services/ip-license.html"> Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 img-style aos-init" data-aos="fade-up">
+          <div class="thumbnail">
+              <div class="mask"> <img src="images/transformation-through-technology8510.jpg?v=0.2" class="img-fluid" alt="Transformation Through Technology"> </div>
+            <div class="caption">
+              <h3 class="fs-4">Transformation Through Technology</h3>
+              <p>We help businesses successfully navigate to digital modernization towards their journey to growth.</p>
+              <a href="services/transformation-through-technology.html"> Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+
+<section class="services-area2 ptb-100">
+            <div class="container">
+                <div class="section-title aos-init" data-aos="fade-up">
+             
+                    <h3>Our Goals</h3>
+                    <p class="fs-4">Committed to excellence, we aim to achieve sustainable growth, innovation, and unparalleled customer satisfaction.</p>
+                    
+                    <a href="goals.html" class="read-more-btn">Read More</a>
+                </div>
+                
+                <div class="row g-4 aos-init" data-aos="fade-up">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-services">
+                            <div class="icon">
+                                <img src="images/ourGoals/ico-goals.svg" class="img-fluid" alt="On-time delivery as per commitment">
+                            </div>
+                            <h3 class="fs-4">On-time delivery</h3>
+                            <p>On-time delivery ensures reliable service, consistently meeting deadlines and customer expectations.</p>
+                           
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-services">
+                            <div class="icon">
+                                <img src="images/ourGoals/ico-goals2.svg" class="img-fluid" alt="Bring value and innovation">
+                            </div>
+                            <h3 class="fs-4">Bring value and innovation</h3>
+                            <p>Delivering exceptional value and pioneering innovation to drive success and elevate experiences for our customers and partners.</p>
+                           
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-services">
+                            <div class="icon">
+                                <img src="images/ourGoals/ico-goals3.svg" class="img-fluid" alt="Maintain high quality standards">
+                            </div>
+                            <h3 class="fs-4">Maintain high quality standards</h3>
+                            <p>Maintain high-quality standards by adhering to best practices, continuous improvement, and strict quality control measures.</p>
+                           
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-services">
+                            <div class="icon">
+                                <img src="images/ourGoals/ico-goals4.svg" class="img-fluid" alt="Top talent to deliver on business needs">
+                            </div>
+                            <h3 class="fs-4">Top talent to deliver on business needs</h3>
+                            <p>Top talent ensures exceptional performance, meeting business goals efficiently with expertise, innovation, and dedication.</p>
+                           
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-services">
+                            <div class="icon">
+                                <img src="images/ourGoals/ico-goals5.svg" class="img-fluid" alt="Keep up safety, compliance and reliability">
+                            </div>
+                            <h3 class="fs-4">Keep up safety, compliance and reliability</h3>
+                            <p>Ensure safety, compliance, and reliability with our comprehensive solutions for a secure and dependable environment.</p>
+                           
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-services">
+                            <div class="icon">
+                                <img src="images/ourGoals/ico-goals6.svg" class="img-fluid" alt="Financial growth along with employee well-being">
+                            </div>
+                            <h3 class="fs-4">Financial growth along with employee well-being</h3>
+                            <p>Promote financial growth while prioritizing employee well-being to create a thriving, productive, and motivated workforce.</p>
+                           
+                        </div>
+                    </div>
+                
+                </div>
+            </div>
+</section>	
+	
+	
+	<section class="analysis-area ptb-100 aos-init" data-aos="fade-up">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 col-md-12">
+                        <div class="analysis-form aos-init" data-aos="fade-up">
+                            <h3>REQUEST A QUOTE</h3>
+                           <form name="query_form" id="query_form" method="POST">
+    <div class="form-group">
+        <input type="text" placeholder="Name*" class="form-control" name="full_name" id="full_name" required>
+    </div>
+
+    <div class="form-group">
+        <input type="email" placeholder="Email*" class="form-control" name="email_id" id="email_id" required>
+    </div>
+
+    <div class="form-group">
+        <input type="text" placeholder="Phone*" class="form-control" name="phone_number" id="phone_number" maxlength="10" required>
+    </div>
+
+    <div class="form-group">
+        <textarea class="form-control form-control2" placeholder="Message" rows="4" name="user_query" id="user_query"></textarea>
+    </div>
+
+    <button type="submit" class="btn btn-primary rdCls">REQUEST A QUOTE</button>
+</form>
+
+<div id="response" style="margin-top: 20px;"></div>
+
+<script>
+document.getElementById("query_form").addEventListener("submit", function(event) {
+    event.preventDefault(); // Prevent the default form submission
+
+    const form = this;
+    const formData = new FormData(form);
+    const submitButton = form.querySelector("button[type='submit']");
+    const originalButtonText = submitButton.textContent;
+
+    // Change button text to "Sending..."
+    submitButton.textContent = "Sending...";
+    submitButton.disabled = true; // Disable the button to prevent multiple submissions
+
+    fetch("/submit_query", {
+        method: "POST",
+        body: formData
+    })
+    .then(response => response.json())
+    .then(data => {
+        document.getElementById("response").innerHTML = data.message;
+
+        if (data.message.includes("Mail sent successfully")) {
+            form.reset(); // Clear the form fields on success
+        }
+
+        // Revert the button text back to the original
+        submitButton.textContent = originalButtonText;
+        submitButton.disabled = false; // Re-enable the button
+    })
+    .catch(error => {
+        document.getElementById("response").innerHTML = "An error occurred. Please try again.";
+        submitButton.textContent = originalButtonText;
+        submitButton.disabled = false;
+    });
+});
+</script>
+
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-6 col-md-12">
+                        <div class="analysis-text aos-init" data-aos="fade-up">
+                            <span class="fs-4">Free Technology Consultation</span>
+                            <h3 class="fs-4">Enhance Your Business with Our Expert Tech Services</h3>
+                            <p>Our comprehensive approach ensures that your business leverages the full potential of technology, driving growth and efficiency across all operations. We specialize in:</p>
+                            <ul>
+                                <li>Expand your team with our skilled professionals who seamlessly integrate into your projects, boosting productivity and expertise.</li>
+                                <li>From concept to completion, we manage your entire project lifecycle, ensuring top-notch quality and timely delivery.</li>
+                                <li>Unlock new revenue streams by licensing your intellectual property, with our support ensuring legal and commercial success.</li>
+                                <li>Innovate and transform your business processes with cutting-edge technology solutions tailored to your unique needs.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+</section>	<footer id="footer" class="border-top-0 m-0 lazyloaded footer" data-bg-src="img/demos/business-consulting-3/backgrounds/background-4.jpg" style="background-size: cover; background-position: center; background-repeat: no-repeat;" aos-init data-aos="fade-up">
+				<div class="container pt-3">
+					<div class="row justify-content-between align-items-center  mb-3">
+						<div class="col-auto mb-4 mb-lg-0">
+							<h2 class="font-weight-semibold text-color-light text-10 ls-0 mb-0"></h2>
+						</div>
+						<div class="col-auto">
+							<a href="contact.html" class="btn btn-primary footerbutt" data-cursor-effect-hover="plus" data-cursor-effect-hover-color="light">
+								<span class="text-color-light">Contact Us</span>
+							</a>
+						</div>
+					</div>
+					<hr class="bg-color-light opacity-1 my-0">
+					<div class="row pt-3 mt-5">
+						<div class="col-lg-3 mb-4 mb-lg-0">
+							<a href="index.html" class="text-decoration-none">
+								<img src="images/simba-logo-new.png" class="img-fluid mb-4" width="123" height="33" alt="SiMBa">
+							</a>
+						</div>
+						<div class="col-lg-4 mb-4 mb-lg-0">
+							<ul class="list list-icons list-icons-lg">
+								<li class="d-flex px-0 mb-1">
+									<div class="animated-icon animated fadeIn svg-fill-color-light">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 419 420" style="enable-background:new 0 0 419 420;" xml:space="preserve" id="icon_151720682784544" data-filename="phone.svg" width="25" height="25">
+	<path d="M303.7,411.1c-15.6-0.1-31.2-2.1-46.4-5.9c-52.4-12.6-106.4-44.7-152-90.4s-77.7-99.6-90.4-152
+		C1.7,107.8,11.2,60.6,41.7,30.1l8.7-8.7c16.5-16.4,43.1-16.4,59.6,0l50.1,50.1c16.5,16.5,16.5,43.2,0,59.6l-29.6,29.6
+		c14.2,24.9,33.5,49.8,56.3,72.6s47.8,42.1,72.6,56.3l29.6-29.6c16.5-16.5,43.1-16.5,59.6,0c0,0,0,0,0,0l50.1,50.1
+		c16.5,16.5,16.5,43.1,0,59.6l-8.7,8.7C368.5,400,338.7,411.1,303.7,411.1z M80.2,39c-3.2,0-6.3,1.3-8.6,3.6l-8.7,8.7
+		c-22.9,22.9-29.6,60-18.8,104.5c11.4,47.1,40.6,96.1,82.4,137.9s90.7,71,137.9,82.4c44.5,10.7,81.6,4.1,104.5-18.8l8.7-8.7
+		c4.7-4.7,4.7-12.4,0-17.2l-50.1-50.1c-4.7-4.7-12.4-4.7-17.2,0l-37.5,37.5c-4.6,4.6-11.7,5.7-17.5,2.7c-30.8-15.9-61.8-39-89.6-67
+		s-51-58.9-66.9-89.6c-3-5.8-1.9-12.9,2.7-17.5l37.5-37.5c4.7-4.7,4.7-12.4,0-17.2L88.8,42.6C86.5,40.3,83.4,39,80.2,39z"></path>
+	<path d="M319.8,230.7c-8.3,0-15-6.7-15-15l0,0c-0.1-54.8-44.5-99.2-99.3-99.3c-8.3,0-15-6.7-15-15s6.7-15,15-15l0,0
+		c71.3,0,129.3,58,129.3,129.3C334.8,224,328,230.7,319.8,230.7C319.8,230.7,319.8,230.7,319.8,230.7z"></path>
+	<path d="M383.1,230.7c-8.3,0-15-6.7-15-15l0,0c0-89.7-73-162.7-162.6-162.7c-8.3,0-15-6.7-15-15s6.7-15,15-15l0,0
+		c106.2,0,192.6,86.4,192.6,192.7C398.1,224,391.4,230.7,383.1,230.7L383.1,230.7z"></path>
+</svg></div>
+									<a href="tel:1234567890" class="text-color-light font-weight-semibold text-3-4 ms-2">+91 9958212395</a>
+								</li>
+								<li class="d-flex px-0 my-3">
+									<div class="animated-icon animated fadeIn svg-fill-color-light"><i class="fa fa-envelope"></i></div>
+									<a href="mailto:info@simba.com" class="text-color-light font-weight-semibold text-3-4 ms-2">info@simbaindia.com</a>
+								</li>
+								<li class="d-flex font-weight-semibold text-color-light px-0 mb-1" style="color: #fff; font-weight: 700;">
+									<div class="animated-icon animated fadeIn svg-fill-color-light me-2">
+<svg version="1.1" id="icon_101720682784541" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 330 433" style="enable-background:new 0 0 330 433;" xml:space="preserve" data-filename="map-pin.svg" width="25" height="25">
+	<path d="M165,414.2c-2.6,0-5.1-0.7-7.3-1.9C68.3,362.4,13,268.1,13,165.8c0-2.1,0-4.1,0.1-6.1c1-45.5,17.9-83.8,49-110.8
+		C89.5,25.1,126.1,12,165,12s75.5,13.1,102.9,36.9c31.1,27,48.1,65.3,49,110.8l0,0c0,2,0.1,4.1,0.1,6.1c0,51-13.8,101.1-40,144.9
+		c-25.4,42.4-61.5,77.4-104.6,101.6C170.1,413.5,167.6,414.2,165,414.2z M165,42c-31.7,0-61.3,10.5-83.3,29.6
+		c-24.5,21.3-37.9,51.9-38.7,88.7c0,1.8-0.1,3.7-0.1,5.5c0,88.4,46.3,170.4,122,216c35.4-21.4,65-51.1,86.3-86.6
+		c23.4-39.1,35.7-83.8,35.7-129.4c0-1.8,0-3.7-0.1-5.5c-0.8-36.8-14.2-67.5-38.7-88.7C226.3,52.5,196.7,42,165,42z"></path>
+	<path d="M165.4,260.6c-52.1,0-94.3-42.2-94.3-94.3S113.3,72,165.4,72s94.3,42.2,94.3,94.3C259.7,218.3,217.5,260.5,165.4,260.6z
+		 M165.4,102c-35.5,0-64.3,28.8-64.3,64.3s28.8,64.3,64.3,64.3s64.3-28.8,64.3-64.3c0,0,0,0,0,0C229.6,130.8,200.9,102,165.4,102
+		L165.4,102z"></path>
+</svg>
+
+
+</div>Simba India<br>
+             New Delhi - 110018 <br>India
+<!--<p>Simba &nbsp; &nbsp;India </p>&nbsp;&nbsp;&nbsp;
+<p>New Delhi-110018 </p>&nbsp;&nbsp;&nbsp;<br />
+<p>India</p> -->
+
+</li>
+							</ul>
+						</div>
+						<div class="col-lg-5 mb-4 mb-lg-0">
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3321.8402311082286!2d-117.60599252430136!3d33.63538437331677!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dceba4309c49ab%3A0x84055812e8013369!2s30211%20Avenida%20de%20las%20Banderas%2C%20Rancho%20Santa%20Margarita%2C%20CA%2092688%2C%20USA!5e0!3m2!1sen!2sin!4v1723709971781!5m2!1sen!2sin" width="100%" height="190" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+					  </div>
+
+					</div>
+				</div>
+				<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+				<div class="footer-copyright container bg-transparent">
+					<div class="row">
+						<div class="col-lg-12 text-center m-0">
+							<hr class="bg-color-light opacity-1 mt-5 mb-4">
+							<p class="text-3-4">Copyright © 2026 | All Rights Reserved | <a href="disclaimer.html" style="color: #fff; text-decoration: underline;">Disclaimer</a></p>
+						</div>
+					</div>
+				</div>
+			</footer>
+	<script src="js/jquery-min1f6b.js?v=0.5"></script>
+<script src="js/bootstrap.bundle.min1f6b.js?v=0.5"></script>
+<script src="js/jquery-magnific-popup-min1f6b.js?v=0.5"></script>
+<script src="js/jquery.menu1f6b.js?v=0.5"></script>
+<script src="js/aos1f6b.js?v=0.5"></script>
+<script src="js/wow1f6b.js?v=0.5"></script>
+<script src="js/custom1f6b.js?v=0.5"></script>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const micBtn = document.getElementById('cinematic-mic-trigger');
+  const inputWrapper = document.getElementById('cinematic-input-wrapper');
+  const inputField = document.getElementById('cinematic-input-field');
+
+  // Cinematic Slideshow Controller
+  const slides = document.querySelectorAll('.cinematic-bg-slider .slide');
+  const titleElement = document.querySelector('.cinematic-title');
+  const searchContainer = document.querySelector('.cinematic-search-container');
+  
+  const slideData = [
+    { text: "Software Development", slideIndex: 0 },
+    { text: "Transforming Businesses Through Digital Solutions", slideIndex: 1 },
+    { text: "Business Technology", slideIndex: 2 },
+    { text: "Cloud Solutions", slideIndex: 3 },
+    { text: "Technology", slideIndex: 4 },
+    { text: "Explore what's next", slideIndex: 4, showTextbox: true }
+  ];
+  
+  let currentStep = 1; // start at 1 since index 0 is active on load
+  let textboxAppeared = false;
+  
+  function updateCinematicSection() {
+    const currentData = slideData[currentStep];
+    
+    // Update active background slide
+    slides.forEach((slide, idx) => {
+      if (idx === currentData.slideIndex) {
+        slide.classList.add('active');
+      } else {
+        slide.classList.remove('active');
+      }
+    });
+    
+    // Fade out title, update text, fade back in
+    if (titleElement) {
+      titleElement.classList.add('fade-out');
+      setTimeout(() => {
+        titleElement.textContent = currentData.text;
+        titleElement.classList.remove('fade-out');
+      }, 500);
+    }
+    
+    // Manage search container visibility
+    if (searchContainer) {
+      if (currentData.showTextbox) {
+        textboxAppeared = true;
+      }
+      
+      if (textboxAppeared) {
+        searchContainer.classList.add('visible');
+      } else {
+        searchContainer.classList.remove('visible');
+      }
+    }
+    
+    // Advance to next step
+    currentStep = (currentStep + 1) % slideData.length;
+  }
+  
+  // Set interval to rotate slides every 5 seconds
+  setInterval(updateCinematicSection, 5000);
+
+  if (micBtn && inputWrapper && inputField) {
+    // Add/remove focus classes for custom styling behavior
+    inputField.addEventListener('focus', () => {
+      inputWrapper.classList.add('active-focus');
+    });
+
+    inputField.addEventListener('blur', () => {
+      inputWrapper.classList.remove('active-focus');
+    });
+
+    let typingTimeout;
+
+    // Click on mic triggers listening animation and simulated speech input typing
+    micBtn.addEventListener('click', () => {
+      // Clear any ongoing typewriter effect
+      clearTimeout(typingTimeout);
+      inputField.value = '';
+
+      if (micBtn.classList.contains('listening')) {
+        // Stop listening early if clicked again
+        stopListeningState();
+      } else {
+        // Start simulated listening state
+        startListeningState();
+      }
+    });
+
+    function startListeningState() {
+      micBtn.classList.add('listening');
+      inputWrapper.classList.add('listening-mode');
+      inputField.disabled = true;
+      inputField.placeholder = 'Listening...';
+      
+      // Simulate listening for 2 seconds, then type
+      typingTimeout = setTimeout(() => {
+        stopListeningState();
+        typeQuery("How can SiMBa transform my business with AI?");
+      }, 2000);
+    }
+
+    function stopListeningState() {
+      micBtn.classList.remove('listening');
+      inputWrapper.classList.remove('listening-mode');
+      inputField.disabled = false;
+      inputField.placeholder = 'Ask me anything';
+    }
+
+    function typeQuery(text) {
+      let index = 0;
+      inputField.focus();
+      
+      function typeChar() {
+        if (index < text.length) {
+          inputField.value += text.charAt(index);
+          index++;
+          typingTimeout = setTimeout(typeChar, 40); // 40ms typing speed
+        } else {
+          // Glow focus when typing is complete
+          inputWrapper.classList.add('active-focus');
+          setTimeout(() => {
+            inputWrapper.classList.remove('active-focus');
+          }, 1500);
+        }
+      }
+      typeChar();
+    }
+  }
+});
+</script>
+
+</body>
+<script>'undefined'=== typeof _trfq || (window._trfq = []);'undefined'=== typeof _trfd && (window._trfd=[]),_trfd.push({'tccl.baseHost':'secureserver.net'},{'ap':'cpsh-oh'},{'server':'p3plzcpnl505160'},{'dcenter':'p3'},{'cp_id':'9957720'},{'cp_cl':'8'})</script><script src='https://img1.wsimg.com/signals/js/clients/scc-c2/scc-c2.min.js'></script>
+</html>

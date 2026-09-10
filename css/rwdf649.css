@@ -1,0 +1,171 @@
+@media only screen and (max-width: 1100px){
+.bannerSec .bannerTitle h1{font-size:60px; line-height:75px;}
+h2{font-size:36px; line-height:45px;}
+.weAre{padding:56px 0px;}
+.ourOffer{padding:60px 0px;}
+header .navbarNav{padding-left: 63px;}
+.ourOffer .caption h3{font-size:26px;line-height:36px;}
+.ourGoals .figure-caption { font-size: 22px;line-height: 30px;}
+.ourGoals{    padding:60px 0px 80px;}
+footer .folUson a,footer .fotAdd i {width: 50px; height: 50px;}
+footer .folUson a img,footer .fotAdd i img { max-height: 20px;}
+.ourClien{    padding:60px 0px 120px;}
+}
+
+
+
+@media only screen and (max-width: 991px){
+header .headLogo{ max-height:60px;}
+.weAre p{ font-size:18px;line-height:30px;}
+.knowMore {padding: 20px 40px;font-size: 20px; line-height: 20px;}
+.ourGoals{    padding:40px 0px 80px;}
+.ourClien .carousel-item{    padding:30px;}
+h2{font-size:30px; line-height:40px;}
+.butState { padding: 1.7rem 0px 0.5rem 0px;}
+.ourOffer .caption h3{font-size:26px; line-height:36px}
+.ourOffer .caption h3 br{display: none}
+.ourGoals .figure-caption{font-size:20px; line-height:30px}
+.folUson{padding-top:30px; justify-content: center!important;} 	
+.ourOffer .mask { height: auto;}
+footer .fotAdd a{font-size:18px; line-height:26px}
+footer .butState { padding-bottom:2rem;}
+header{padding: 0px;}
+header.stick{padding: 0px;}
+.mt-11{margin-top: 0px;}	
+.ourOffer .caption { padding: 22px 15px 20px;height: 100%;}
+.about .aboutDiscr {padding: 40px 0px 40px;}
+.about .vision .visionbox .visionDescript {padding-left: 10px;}
+.about .vision .visionbox .h1 {font-size: 46px;line-height: 56px; margin-bottom: 7px;}
+.about .vision .visionbox p{font-size: 18px; line-height: 26px;}
+.about .vision .visionbox p br{display: none}
+.about .vision {padding: 40px 0px;}
+.servicespage { padding: 40px 0px;}
+.servicespage .tabmenu ul li { padding-right: 53px;}
+.servicespage h1 { font-size: 46px; line-height: 56px; margin-bottom: 28px;}
+header .navbarNav a.active:after { display: none;}
+.career { padding: 40px 0px 40px;}
+.career h1 {font-size: 46px; line-height: 56px;  margin-bottom: 21px;}
+.contDetails { padding: 42px 0px 40px;}
+.contDetails h1, .contDetails .h1 {font-size: 46px;line-height: 56px; margin-bottom: 21px;}
+
+/* Topbanner mobile fixes for tablets removed (moved to index.html style block) */
+
+
+}
+
+
+@media only screen and (max-width: 767px){
+.bannerSec .bannerTitle h1 {font-size: 30px; line-height: 40px;}
+.ourOffer { padding: 20px 0px;}
+.ourGoals .figure-caption br{display: none;}
+	.ourGoals { padding: 40px 0px 0px;}
+.weAre { padding:30px 0px 20px;}
+.copyright{display: block;     padding-top:15px;}
+footer { padding: 30px 0px 20px;}
+.copyright a{margin-left: 0px; margin-top: 15px; display: block}
+.folUson{justify-content: flex-start !important;}
+.about .aboutDiscr h1 { font-size: 46px;line-height: 55px; margin-bottom: 16px;}
+.about .vision .visionbox { margin-bottom:40px; display: block; text-align: center}
+	.about .vision .visionbox .h1 { font-size: 34px; line-height: 38px;}
+.about .vision .visionbox .lighbox { margin-top: 0px; margin-bottom: 20px;}
+.desktohide{display: none !important;}
+.mobiletext{display: block;}
+.servicespage p.ps-4{padding-left: 0px !important}
+
+.servicespage .ser-details.mr-lft { margin-left: 0px}		
+.servicespage h2 { font-size: 24px;line-height: 34px; margin-top: 26px; margin-bottom: 8px;}
+.servicespage p {font-size: 16px; line-height: 24px; color: #FFFFFF; margin-bottom: 15px;   padding-right:0px;}
+.servicespage .ser-details p {font-size: 16px; line-height: 24px;}	
+.servicespage ul.ser-info li {font-size: 16px; line-height: 24px;}	
+.ourOffer .mask img {height: auto; width: 100%}	
+.ourOffer .mask { max-height: inherit;}	
+.ourOffer .caption { max-height: inherit;}	
+
+.pb-120 {padding-bottom: 0px;}
+.servicespage h1 { font-size: 36px; line-height: 46px;margin-bottom: 21px;}
+.about .aboutDiscr h1 { font-size: 36px; line-height: 46px;margin-bottom:10px;}
+.about .aboutDiscr { padding: 20px 0px 20px;}
+.about .aboutDiscr p {font-size: 15px;line-height: 22px; margin-bottom: 15px;}
+.contDetails h1, .contDetails .h1 {font-size: 30px;line-height: 40px; margin-bottom: 20px;}
+.contactform{margin-bottom: 20px;}
+.contDetails p { font-size: 20px; line-height: 30px;  margin-bottom: 25px;}
+.contDetails .conatlink i img{width:30px }
+.contDetails .conatlink i { width: 60px;  height: 60px;}
+.contDetails .sociallink a {width: 60px; height: 60px;}
+.contDetails .sociallink a img{width: 18px;}
+.contDetails {padding: 20px 0px 0px;}
+.contDetails .conatlink a {font-size: 18px;}
+.contactform .submbtn {font-size: 22px;height: 63px; line-height: 62px; width: 100%;}
+.career { padding: 20px 0px 20px;}
+.career h1 { font-size: 36px; line-height:46px;margin-bottom: 10px;}
+.career p { font-size: 16px;  line-height: 27px;  color: #FFFFFF;margin-bottom: 13px; padding-right: 0px;}
+.careeimg img{margin-bottom: 20px;}
+.career a.mailto { margin-top:30px; margin-bottom: 30px;}
+.career a.mailto strong { font-size: 18px;}
+.career .emailader i { width: 60px; height: 60px;}
+.career .emailader i  img{ width: 30px;}
+.career a.mailto {font-size: 16px; line-height: 18px;}
+
+/* Topbanner mobile fixes removed (moved to index.html style block) */
+
+/* Services offer cards - 2 columns on tablet, 1 on phone */
+.ourOffer .col-md-3 {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+/* Analysis form mobile fix */
+.analysis-form {
+    padding: 25px;
+    margin-bottom: 30px;
+}
+.analysis-text h3 {
+    font-size: 26px;
+    line-height: 34px;
+}
+}
+	
+@media only screen and (max-width: 576px){	
+.ourClien .carousel-item p{ font-size:15px;line-height:24px;}
+.ourClien .carousel-item h3{font-size:20px;line-height:30px;}	
+footer .content p { font-size:15px;}
+.weAre p{ font-size:15px;line-height:24px;}
+.knowMore {padding:1rem 30px;font-size:18px; line-height: 20px; margin-bottom: 0px;}
+h2{font-size:30px; line-height:36px;}
+.ourOffer .caption h3{font-size:20px; line-height:30px}
+.ourOffer .caption p{ font-size:15px;line-height:24px;}
+.ourOffer .caption{height:auto;}
+.ourGoals .figure-caption{font-size:18px; line-height:26px}
+footer .fotAdd a { font-size: 15px;}
+.fotAdd{display: block!important;}
+.fotAdd a{margin-bottom:1rem;}
+footer .folUson a,footer .fotAdd i {width:40px; height:40px;}
+footer .folUson a img,footer .fotAdd i img { max-height:1rem;}
+.folUson { padding-top: 10px;}
+footer .butState { padding-bottom:1.5rem;}
+footer .folUson a{margin-left: 0px; margin-right: 14px;}
+.servicespage { padding: 20px 0px;}
+
+/* Topbanner small phone fixes removed (moved to index.html style block) */
+
+/* Services offer cards - single column on small phones */
+.ourOffer .col-md-3 {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+/* Section title read more link - reposition for mobile */
+.section-title .read-more-btn {
+    position: static;
+    display: block;
+    margin-top: 10px;
+}
+
+/* Footer mobile fixes */
+#footer .container {
+    padding: 0 15px;
+}
+#footer .row {
+    margin: 0;
+}
+}
